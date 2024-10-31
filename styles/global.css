@@ -1,60 +1,98 @@
 :root {
-  --primary: #a2d2ff;
-  --secondary: #bde0fe;
-  --danger: #ffafcc;
-  --info: #ffc8dd;
-  --muted: #cdb4db;
-  --light: #ffffff;
-  --dark: #000000;
+    --primary: #a2d2ff;
+    --secondary: #bde0fe;
+    --danger: #ffafcc;
+    --info: #ffc8dd;
+    --muted: #cdb4db;
+    --light: #ffffff;
+    --dark: #000000;
 }
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: var(--light);
-  color: var(--dark);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light);
+    color: var(--dark);
 }
+
 header {
-  text-align: center;
-  padding: 20px;
-  background-color: var(--light);
-  box-shadow: 0 4px 10px var(--dark);
+    text-align: center;
+    padding: 20px;
+    background-color: var(--light);
+    box-shadow: 0 4px 10px var(--dark);
 }
+
 .header-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 }
+
 .avatar {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid var(--light);
-  box-shadow: 0 4px 8px var(--dark);
-  margin-bottom: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--light);
+    box-shadow: 0 4px 8px var(--dark);
+    margin-bottom: 10px;
 }
+
 h1 {
-  font-size: 2.2rem;
-  margin: 10px 0;
-  color: var(--dark);
+    font-size: 2.2rem;
+    margin: 10px 0;
+    color: var(--dark);
 }
+
 p {
-  color: var(--dark);
-  font-size: 1rem;
+    color: var(--dark);
+    font-size: 1rem;
 }
+
 .language-switcher button {
-  background-color: var(--dark);
-  color: var(--light);
-  border: none;
-  padding: 10px 20px;
-  margin: 5px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+    background-color: var(--dark);
+    color: var(--light);
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
+
 .language-switcher button:hover {
-  color: var(--dark);
-  background-color: var(--light);
+    color: var(--dark);
+    background-color: var(--light);
+}
+
+nav {
+    background-color: var(--light);
+    box-shadow: 0 4px 8px var(--dark);
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary);
 }
