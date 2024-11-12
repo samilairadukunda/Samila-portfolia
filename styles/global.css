@@ -96,3 +96,26 @@ nav a {
 nav a:hover {
     color: var(--primary);
 }
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: var(--dark);
+}
+
+.section {
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out;
+    margin-bottom: 40px;
+}
+
+.section:hover {
+    opacity: 1;
+}
