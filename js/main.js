@@ -8,6 +8,11 @@ const translations = {
         contact: "Contact",
         aboutTitle: "About Me",
         aboutDescription: " I am a computer science student currently studying in Germany. I was born in Rwanda and have a passion for technology, coding, and problem-solving. ",
+        skills1: "Programming (Java, Python, JavaScript)",
+        skills2: "Web Development (HTML, CSS, React)",
+        skills3: "Database Management (SQL, MongoDB)",
+        skills4: "Machine Learning",
+        skill5: "Problem Solving",
     },
     de: {
         name: "Samila Iradukunda ",
@@ -18,6 +23,11 @@ const translations = {
         contact: "kontakt",
         aboutTitle: "Über mich",
         aboutDescription: "Ich bin Informatikstudentin, die derzeit in Deutschland studiert. Ich bin in Ruanda geboren und ich habe eine Leidenschaft für Technologie, Programmierung und Problemlösung.",
+        skills1: "Progammierung (Java, Python, JavaScript)",
+        skills2: "Web entwiecklung (HTML, CSS, React)",
+        skills3: "Databank verwaltung (SQL, MongoDB)",
+        skills4: "Maschinelles lernen ",
+        skills5: "ProblemLösung",
     },
 };
 
@@ -42,4 +52,9 @@ function updateContent(language) {
         translations[language].aboutTitle;
     document.getElementById("about-description").innerText =
         translations[language].aboutDescription;
+    document.getElementById("skill1").innerText = translations[language].skills1;
+    document.getElementById("skill2").innerText = translations[language].skills2;
+    document.getElementById("skill3").innerText = translations[language].skills3;
+    document.getElementById("skill4").innerText = translations[language].skills4;
+    document.getElementById("skill5").innerText = translations[language].skills5;
 }
