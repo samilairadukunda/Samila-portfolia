@@ -13,6 +13,9 @@ const translations = {
         skills3: "Database Management (SQL, MongoDB)",
         skills4: "Machine Learning",
         skill5: "Problem Solving",
+        projectsTitle: "Projects",
+        project1Title: "Portfolio website",
+        project1Description: "A personal portfolio website to showcase my skills and projects.",
     },
     de: {
         name: "Samila Iradukunda ",
@@ -28,6 +31,9 @@ const translations = {
         skills3: "Databank verwaltung (SQL, MongoDB)",
         skills4: "Maschinelles lernen ",
         skills5: "ProblemLösung",
+        projectsTitle: "Projekt",
+        project1Title: "Portfolio website",
+        project1Description: "Eine persönliche Portfolio-Website, um meine Fähigkeiten und Projekte zu präsentieren.",
     },
 };
 
@@ -57,4 +63,10 @@ function updateContent(language) {
     document.getElementById("skill3").innerText = translations[language].skills3;
     document.getElementById("skill4").innerText = translations[language].skills4;
     document.getElementById("skill5").innerText = translations[language].skills5;
+    document.getElementById("projects-title").innerText =
+        translations[language].projectsTitle;
+    document.getElementById("project1-title").innerText =
+        translations[language].project1Title;
+    document.getElementById("project1-description").innerText =
+        translations[language].project1Description;
 }
