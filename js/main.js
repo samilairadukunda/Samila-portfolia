@@ -16,6 +16,7 @@ const translations = {
         projectsTitle: "Projects",
         project1Title: "Portfolio website",
         project1Description: "A personal portfolio website to showcase my skills and projects.",
+        footerText: "© 2024 Samila Iradukunda. All rights reserved.",
     },
     de: {
         name: "Samila Iradukunda ",
@@ -34,6 +35,7 @@ const translations = {
         projectsTitle: "Projekt",
         project1Title: "Portfolio website",
         project1Description: "Eine persönliche Portfolio-Website, um meine Fähigkeiten und Projekte zu präsentieren.",
+        footerText: "© 2024 Samila Iradukunda.Alle Rechte vorbehalten.",
     },
 };
 
@@ -69,4 +71,6 @@ function updateContent(language) {
         translations[language].project1Title;
     document.getElementById("project1-description").innerText =
         translations[language].project1Description;
+    document.getElementById("footer-text").innerText =
+        translations[language].footerText;
 }
