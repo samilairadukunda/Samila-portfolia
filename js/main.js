@@ -17,6 +17,9 @@ const translations = {
         project1Title: "Portfolio website",
         project1Description: "A personal portfolio website to showcase my skills and projects.",
         footerText: "© 2024 Samila Iradukunda. All rights reserved.",
+        contactTitle: "Contact Me",
+        contactDescription: "If you'd like to get in touch, feel free to send me a message via email.",
+        contactButton: "send Email",
     },
     de: {
         name: "Samila Iradukunda ",
@@ -36,6 +39,9 @@ const translations = {
         project1Title: "Portfolio website",
         project1Description: "Eine persönliche Portfolio-Website, um meine Fähigkeiten und Projekte zu präsentieren.",
         footerText: "© 2024 Samila Iradukunda.Alle Rechte vorbehalten.",
+        contactTitle: "Kontaktiere mich",
+        contactDescription: "Wenn Sie Kontakt aufnehmen möchten,senden Sie mir bitte eine Nachricht per E-Mail.",
+        contactButton: "senden E-mail",
     },
 };
 
@@ -73,4 +79,10 @@ function updateContent(language) {
         translations[language].project1Description;
     document.getElementById("footer-text").innerText =
         translations[language].footerText;
+    document.getElementById("contact-title").innerText =
+        translations[language].contactTitle;
+    document.getElementById("contact-description").innerText =
+        translations[language].contactDescription;
+    document.getElementById("contact-button").innerText =
+        translations[language].contactButton;
 }
